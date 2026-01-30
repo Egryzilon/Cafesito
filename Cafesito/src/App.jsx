@@ -1,5 +1,6 @@
 import './App.css'
 import Boton from './components/Boton'
+import Dashboard from './components/Dashboard'
 import Login from './components/Login'
 
 function App() {
@@ -8,7 +9,8 @@ function App() {
     <>
       <h1>Bienvenidos</h1>
       <p>Lorem, ipsum.</p>
-      <Login/>
+      
+      <Dashboard/>
     </>
   )
 }
