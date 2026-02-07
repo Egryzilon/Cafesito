@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 function Quotes(){
-    url="https://dummyjson.ocm/quotes"
+    url="https://dummyjson.com/quotes"
     // captain
     // Hooks
     const [Quotes,setQuotes]=useState ([]) 
@@ -21,7 +21,7 @@ function Quotes(){
     return(
         <>
         <h2>
-            Frases Listados
+            Frases chidas
         </h2>
         </>
     )

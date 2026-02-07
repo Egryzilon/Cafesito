@@ -1,0 +1,11 @@
+{
+    "money": 0,
+    "pets": [
+        {
+            "specie": "Cat",
+            "name": "tellita",
+            "color": "White"
+        }
+    ],
+    "decoration": []
+}
