@@ -1,17 +1,19 @@
+import { BrowserRouter, Navigate, Routes } from 'react-router-dom'
 import './App.css'
-import Login from './components/Login'
-import Dash from './components/Login'
-/*import Dashboard from './components/Dashboard'*/
-import Map from './components/Map'
+import Login from './pages/Login'
+import Pokedex from './pages/Pokedex'
 
 function App() {
 
   return (
-    <>
-      <h1>Mapa</h1>
-      
-      <Map/>
-    </>
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Login/>} />
+      <Route path="/pokedex" element={<Pokedex/>} />
+      <Route path="*" element={<Navigate to="/"/>} />
+
+    </Routes>
+  </BrowserRouter>
   )
 }
 
