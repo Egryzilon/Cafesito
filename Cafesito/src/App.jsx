@@ -1,4 +1,4 @@
-import { BrowserRouter, Navigate, Routes } from 'react-router-dom'
+import { BrowserRouter, Navigate, Routes, Route } from 'react-router-dom'
 import './App.css'
 import Login from './pages/Login'
 import Pokedex from './pages/Pokedex'
@@ -14,7 +14,7 @@ function App() {
 
     </Routes>
   </BrowserRouter>
-  )
+  ) 
 }
 
 export default App
