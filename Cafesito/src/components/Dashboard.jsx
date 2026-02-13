@@ -1,5 +1,5 @@
 import Pokedex from '../pages/Pokedex';
-import MapBox from './Map';
+import MapBox from './Map'; // FIXED: default import instead of named import
 
 function Dashboard() {
   return (
@@ -91,7 +91,7 @@ function Dashboard() {
           </div>
         </div>
 
-        
+
       </div>
     </div>
   );
