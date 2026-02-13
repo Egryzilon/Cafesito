@@ -1,7 +1,7 @@
 import { BrowserRouter, Navigate, Routes, Route } from 'react-router-dom'
 import './App.css'
 import Login from './pages/Login'
-import Pokedex from './pages/Pokedex'
+import Dashboard from './components/Dashboard'
 
 function App() {
 
@@ -9,7 +9,7 @@ function App() {
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<Login/>} />
-      <Route path="/pokedex" element={<Pokedex/>} />
+      <Route path="/pokedex" element={<Dashboard/>} />
       <Route path="*" element={<Navigate to="/"/>} />
 
     </Routes>
