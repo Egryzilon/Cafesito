@@ -1,7 +1,5 @@
-import axios from 'axios'
-import { Pokedex } from '../pages/Pokedex'
-import { MapBox } from './Map';
-import { useEffect, useState } from 'react'
+import Pokedex from '../pages/Pokedex';
+import MapBox from './Map';
 
 function Dashboard() {
   return (
@@ -76,27 +74,24 @@ function Dashboard() {
 
         {/* CONTENT SECTIONS */}
         <div className="grid grid-cols-2 gap-6 h-[60vh]">
-          {/* POKEMON SEARCHER SECTION */}
-          <div className="border-4 border-green-500 rounded-xl p-6 bg-gray-800/50 flex flex-col overflow-hidden">
+          {/* POKEMON SEARCHER - USING ACTUAL COMPONENT */}
+          <div className="border-4 border-green-500 rounded-xl p-6 bg-gray-800/50 flex flex-col">
             <h2 className="text-2xl font-bold text-green-400 mb-4">Buscador de Pokemon</h2>
             <div className="flex-1 overflow-auto">
               <Pokedex />
             </div>
           </div>
           
-          {/* MAP SECTION */}
-          <div className="border-4 border-blue-500 rounded-xl p-6 bg-gray-800/50 flex flex-col overflow-hidden">
+          {/* MAP - USING ACTUAL COMPONENT */}
+          <div className="border-4 border-blue-500 rounded-xl p-6 bg-gray-800/50 flex flex-col">
             <h2 className="text-2xl font-bold text-blue-400 mb-4">Mapa</h2>
-            <div className="flex-1 overflow-hidden">
+            <div className="flex-1">
               <MapBox />
             </div>
           </div>
         </div>
 
-        {/* FOOTER */}
-        <div className="mt-8 text-right text-sm text-gray-400">
-          Desarrollado por Gabriel Perez Torres
-        </div>
+        
       </div>
     </div>
   );
